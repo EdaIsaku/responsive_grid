@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img onclick="openModal(this.src)" src="images/1.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/2.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/3.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/4.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/5.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/6.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/7.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img onclick="openModal(this.src)" src="images/8.png" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/6.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/2.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/3.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/3.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/4.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img onclick="openModal(this.src)" src="images/6.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/7.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/8.png" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/1.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/3.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img onclick="openModal(this.src)" src="images/5.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/1.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/3.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/7.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/4.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/2.jpg" style="width:100%">
+    <img onclick="openModal(this.src)" src="images/6.jpg" style="width:100%">
+
+  </div>
+</div>
+
+<div class="modalBackground">
+    <span class="closeModal" onclick="closeModal()" >X</span>
+      <div class="modalContainer">
+          <img onclick="openModal()" src="images/7.jpg">
+      </div>
+</div>
+
+<script  src="index.js" charset="utf-8"> </script>
+
+
+<!-- <script type="text/javascript">
+
+var d = window.document;
+var images = d.getElementsByTagName('img');
+var close = d.getElementsByClassName('closeModal')[0];
+var modalBackground = d.getElementsByClassName('modalBackground')[0];
+
+function openModal(){
+var modal = d.getElementsByClassName('modalBackground')[0];
+var modalImage = d.querySelectorAll('.modalContainer img')[0];
+	modal.style.display='flex';
+      modalImage.onclick="openModal()" src = this.onclick="openModal()" src;
+}
+
+function closeModal(){
+var modal = d.getElementsByClassName('modalBackground')[0]
+	modal.style.display = "none";
+}
+
+close.addEventListener('click',closeModal)
+
+Array.from(images,function(e){
+e.addEventListener('click', openModal)
+console.log(e.onclick="openModal()" src)
+})
+
+
+  modalBackground.addEventListener('click',function(e){
+  if (modalBackground !== e.target) return;
+  closeModal()
+  })
+
+</script> -->
+
+</body>
+
+</html>
